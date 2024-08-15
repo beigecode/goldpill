@@ -1,4 +1,29 @@
 <body>
+  <style>
+    .stripe-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px; /* Add some padding to give space on smaller screens */
+    }
+
+    stripe-pricing-table {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .stripe-container {
+            padding: 0 10px; /* Adjust padding for smaller screens */
+        }
+
+        stripe-pricing-table {
+            transform: scale(0.95); /* Scale down slightly on very small screens */
+            transform-origin: top left;
+        }
+    }
+</style>
   <!-- Paste your embed code script here. -->
   <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1PnO4dLfi7djjdZfMPweqI2v"
